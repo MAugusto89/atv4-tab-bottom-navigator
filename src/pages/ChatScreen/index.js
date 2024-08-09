@@ -7,7 +7,15 @@ export default function ChatScreen() {
   return (
     <WebView
       source={{
-        uri: "https://newsapi.org/v2/everything?q=tesla&from=2024-07-03&sortBy=publishedAt&apiKey=b385191407df4f4e9dafa8e927000b3d",
+        uri: "https://gemini.google.com/",
+      }}
+      style={{
+        borderRadius: "90%",
+        alignSelf: "center",
+        width: "99%",
+        marginTop: "8%",
+        height: "100%",
+        flex: 1,
       }}
     />
   );
