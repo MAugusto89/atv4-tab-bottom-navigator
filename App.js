@@ -7,11 +7,12 @@ import {
   FontAwesome,
   Entypo,
   Feather,
+  MaterialCommunityIcons,
 } from "@expo/vector-icons";
 
 import ToDoScreen from "./src/pages/ToDoScreen";
-import NewsScreen from "./src/pages/NewsScreen";
-import BookScreen from "./src/pages/BookScreen";
+import FastScreen from "./src/pages/FastScreen";
+import StudentScreen from "./src/pages/StudentScreen";
 import ProfileScreen from "./src/pages/ChatScreen";
 
 const Tab = createBottomTabNavigator();
@@ -46,13 +47,13 @@ export default function App() {
           component={ProfileScreen}
           options={{
             tabBarIcon: ({ size, color }) => (
-              <FontAwesome name="user" size={size} color={color} />
+              <MaterialCommunityIcons name="chat" size={size} color={color} />
             ),
           }}
         />
         <Tab.Screen
-          name="News"
-          component={NewsScreen}
+          name="Fast"
+          component={FastScreen}
           options={{
             tabBarIcon: ({ size, color }) => (
               <Entypo name="signal" size={size} color={color} />
@@ -60,8 +61,8 @@ export default function App() {
           }}
         />
         <Tab.Screen
-          name="Book"
-          component={BookScreen}
+          name="Student"
+          component={StudentScreen}
           options={{
             tabBarIcon: ({ size, color }) => (
               <MaterialIcons name="book" size={size} color={color} />
